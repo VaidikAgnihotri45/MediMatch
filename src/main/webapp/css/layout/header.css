@@ -1,0 +1,153 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+/*     #003366    linear-gradient(135deg, #0b3d6d, #0059b3);
+ */    background: #003366;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 22px 1px;  
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+}
+
+/* CONTAINER */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 55px;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo h1 {
+    font-size: 26px;
+    color: white;
+}
+
+.logo span {
+    font-size: 30px;
+    color: #cce6ff;
+}
+
+/* SEARCH (GLASS STYLE) */
+.header-search {
+    display: flex;
+    align-items: center;
+    width: 380px;
+     height: 46px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.search-input::placeholder {
+    color: #ddd;
+}
+
+.header-search button {
+    background: #00bfff;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    cursor: pointer;
+}
+
+/* NAV LINKS */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+    gap: 28px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* 🔥 UNDERLINE ANIMATION */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background: #00d4ff;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* SIGNUP */
+.signup {
+    padding: 8px 18px;
+    border-radius: 20px;
+    color: #003366 !important;
+    font-weight: bold;
+      font-size: 15px;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background: white;
+    min-width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    color: #003366;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background: #f0f7ff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

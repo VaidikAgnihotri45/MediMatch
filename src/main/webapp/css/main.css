@@ -1,0 +1,9 @@
+@charset "UTF-8";
+body {
+font-family: Arial;
+background-color: #f8f9fa;
+}
+
+.container {
+max-width: 1200px;
+}

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@charset "UTF-8";
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+background:linear-gradient(135deg,#eef2f7,#e3eaf3);
+}
+
+.container{
+padding:40px;
+}
+
+h2{
+margin-bottom:25px;
+color:#2c3e50;
+}
+
+/* GRID */
+.card-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+/* CARD */
+.appointment-card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.appointment-card:hover{
+transform:translateY(-5px);
+}
+
+/* HEADER */
+.card-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:10px;
+}
+
+.card-header h3{
+margin:0;
+color:#2c3e50;
+}
+
+/* BODY */
+.card-body p{
+margin:6px 0;
+color:#555;
+}
+
+/* BADGES */
+.badge{
+padding:5px 12px;
+border-radius:20px;
+font-size:12px;
+color:white;
+font-weight:bold;
+}
+
+.badge.pending{ background:#f39c12; }
+.badge.approved{ background:#2ecc71; }
+.badge.completed{ background:#3498db; }
+.badge.cancelled{ background:#e74c3c; }
+
+/* ACTIONS */
+.card-actions{
+margin-top:15px;
+display:flex;
+gap:10px;
+}
+
+.btn{
+text-decoration:none;
+padding:6px 12px;
+border-radius:6px;
+color:white;
+font-size:13px;
+}
+.prescription{ background:#2ecc71; }
+.complete{ background:#2ecc71; }
+.cancel{ background:#e74c3c; }
+
+.no-action{
+color:#888;
+}
+
+/* EMPTY */
+.empty{
+text-align:center;
+margin-top:50px;
+color:#777;
+}
+
+
+.in_progress{
+    background: orange;
+    color: white;
+}
+.btn.details{
+    background: #3498db;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
+}

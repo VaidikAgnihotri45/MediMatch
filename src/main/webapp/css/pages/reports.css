@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* PAGE */
+.report-page {
+  padding: 80px 20px;
+  background: #f5f8fc;
+}
+
+.report-page h1 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+/* STATS */
+.report-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.stat {
+  background: white;
+  padding: 30px;
+  width: 200px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.stat h2 {
+  color: #003366;
+}
+
+/* FILTER */
+.report-filter {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.report-filter input,
+.report-filter select {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.report-filter button {
+  padding: 10px 20px;
+  background: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+/* TABLE */
+.report-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.report-table th,
+.report-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.report-table th {
+  background: #003366;
+  color: white;
+}
+
+.report-table tr:hover {
+  background: #f1f1f1;
+}
+
+
+
+
+/* STATUS BADGE */
+
+.status-approved,
+.status-cancelled,
+.status-pending {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-approved {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-cancelled {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.status-pending {
+  background: #003366;
+  color: #F5F8FC;
+/*   b45309
+ */}
+
